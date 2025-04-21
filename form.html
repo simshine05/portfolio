@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>문의 및 피드백</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("피드백이 성공적으로 제출되었습니다. 감사합니다!");
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>심빛나 포트폴리오 - 피드백 폼</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>의견을 남겨주세요 ✉️</h2>
+
+      <form onsubmit="handleSubmit(event)">
+        <fieldset>
+          <legend>기본 정보</legend>
+
+          <label for="name">이름:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">이메일:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>문의 내용</legend>
+
+          <label>연락을 받고 싶은 시간대:</label><br>
+          <input type="radio" name="time" value="오전"> 오전
+          <input type="radio" name="time" value="오후"> 오후
+          <input type="radio" name="time" value="저녁"> 저녁<br><br>
+
+          <label>관심 분야:</label><br>
+          <input type="checkbox" name="interest" value="웹 개발"> 웹 개발
+          <input type="checkbox" name="interest" value="디자인"> 디자인
+          <input type="checkbox" name="interest" value="협업 제안"> 협업 제안<br><br>
+
+          <label for="contact">선호 연락 방법:</label><br>
+          <select id="contact" name="contact">
+            <option value="">-- 선택하세요 --</option>
+            <option value="이메일">이메일</option>
+            <option value="전화">전화</option>
+            <option value="카카오톡">카카오톡</option>
+          </select><br><br>
+
+          <label for="message">하고 싶은 말:</label><br>
+          <textarea id="message" name="message" rows="5" placeholder="자유롭게 의견을 남겨주세요 :)"></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">제출하기</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    심빛나 | simshine05@gmail.com
+  </footer>
+</body>
+</html>
