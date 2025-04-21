@@ -2,29 +2,54 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>심빛나의의 포트폴리오</title>
+  <title>심빛나의 포트폴리오</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>심빛나의 포트폴리오</h1>
+  <!-- 페이지 제목 -->
+  <header>
+    <h1>심빛나의 포트폴리오</h1>
+  </header>
 
-  <!-- 프로필 사진 -->
-  <img src="profile.jpg" alt="프로필 사진">
+  <!-- 목차 영역 -->
+  <nav>
+    <h2>📌 목차</h2>
+    <ul>
+      <li><a href="#about">자기소개</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="form.html">문의하기</a></li> <!-- form.html로 연결 -->
+    </ul>
+  </nav>
 
-  <!-- 내 정보 -->
-  <h2>연락처</h2>
-  <p>이메일: <a href="mailto:simshine@gmail.com">simshine05@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/simshine05" target="_blank">https://github.com/simshine05</a></p>
+  <!-- 자기소개 영역 -->
+  <section id="about">
+    <h2>👤 자기소개</h2>
+    <!-- 프로필 이미지 -->
+    <img src="profile.jpg" alt="프로필 사진" width="150">
+    <p>이메일: <a href="mailto:simshine05@gmail.com">simshine05@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/simshine05" target="_blank">https://github.com/simshine05</a></p>
+  </section>
 
-  <!-- 프로젝트 목록 -->
-  <h2>프로젝트</h2>
-  <div class="project">
-    <h3>추천 여행지 웹페이지</h3>
-    <p>여행지 정보를 테이블로 정리하고, 상세 페이지와 설문폼까지 연결한 간단한 여행 추천 웹사이트입니다.</p>
-    <a class="button" href="https://github.com/simshine05/internet_project" target="_blank">📁 GitHub 저장소 바로가기</a>
+  <!-- 프로젝트 소개 영역 -->
+  <section id="projects">
+    <h2>💻 프로젝트</h2>
 
-  </div>
+    <article class="project">
+      <h3>추천 여행지 웹페이지</h3>
+      <p>여행지 정보를 테이블로 정리하고, 상세 페이지와 설문 폼까지 연결한 간단한 여행 추천 웹사이트입니다.</p>
+      <!-- GitHub 리포지토리 연결 -->
+      <a class="button" href="https://github.com/simshine05/internet_project" target="_blank">📁 GitHub 저장소 바로가기</a>
+    </article>
+
+    <!-- 웹폼 연결 -->
+    <p><a class="button" href="form.html">📨 폼 제출하러 가기</a></p>
+  </section>
+
+  <!-- 항상 보이는 꼬리말 -->
+  <footer>
+    <p> 심빛나. simshine05@gmail.com</p>
+  </footer>
 
 </body>
 </html>
