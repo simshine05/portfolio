@@ -65,5 +65,29 @@
   <footer>
     <p> 페이지 제작자: 심빛나, 문의 웹폼</p>
   </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      const form = event.target;
+  
+      const formData = new FormData(form);
+      const params = new URLSearchParams(formData).toString();
+  
+      fetch("https://script.google.com/macros/s/AKfycbyB7RgT8dtssInAXV5S01aMmok_fWostAbqM6PJE0Rr2fCZCdT8ctDmYwIuTYqlgBBI/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: params
+      }).then(() => {
+        alert("답변이 성공적으로 제출되었습니다!");
+      }).catch((error) => {
+        alert("오류 발생: " + error.message);
+      });
+    }
+  </script>
+  
 </body>
 </html>
