@@ -7,41 +7,53 @@
 </head>
 <body>
 
+  <!-- 상단 제목 -->
   <header>
     <h1>심빛나의 포트폴리오</h1>
   </header>
 
-  <main>
-    <!-- 프로필 사진 -->
-    <section>
-      <img src="profile.jpg" alt="프로필 사진" class="profile-img">
+  <!-- 📌 페이지 목차 -->
+  <nav>
+    <h2>📌 목차</h2>
+    <ul>
+      <li><a href="#about">👤 자기소개</a></li>
+      <li><a href="#projects">💻 프로젝트</a></li>
+      <li><a href="#contact">📨 문의하기</a></li>
+    </ul>
+  </nav>
 
-      <!-- 내 정보 -->
-      <h2>연락처</h2>
+  <main>
+
+    <!-- 👤 자기소개 섹션 -->
+    <section id="about">
+      <h2>👤 자기소개</h2>
+      <img src="profile.jpg" alt="프로필 사진" class="profile-img">
       <p>이메일: <a href="mailto:simshine05@gmail.com">simshine05@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/simshine05" target="_blank">https://github.com/simshine05</a></p>
     </section>
 
-    <!-- 프로젝트 목록 -->
-    <section>
-      <h2>프로젝트</h2>
-      <div class="project">
+    <!-- 💻 프로젝트 섹션 -->
+    <section id="projects">
+      <h2>💻 프로젝트</h2>
+      <article class="project">
         <h3>추천 여행지 웹페이지</h3>
         <p>여행지 정보를 테이블로 정리하고, 상세 페이지와 설문폼까지 연결한 간단한 여행 추천 웹사이트입니다.</p>
         <a class="button" href="https://github.com/simshine05/internet_project" target="_blank">📁 GitHub 저장소 바로가기</a>
-      </div>
+      </article>
     </section>
 
-    <!-- 웹폼 링크 -->
-    <section>
-      <h2>의견 보내기</h2>
-      <p><a href="form.html" target="_blank">💬 나에게 의견 보내기 (웹폼)</a></p>
+    <!-- 📨 웹폼 연결 섹션 -->
+    <section id="contact">
+      <h2>📨 문의하기</h2>
+      <p>방문자 의견이나 제안이 있다면 아래 버튼을 눌러주세요!</p>
+      <a class="button" href="form.html">👉 피드백 폼 바로가기</a>
     </section>
+
   </main>
 
-  <!-- 항상 아래 고정될 꼬리말 -->
+  <!-- 푸터 -->
   <footer>
-    <p>제작자: 심빛나, 포트폴리오 페이지</p>
+    <p>© 2025 심빛나. 이메일: simshine05@gmail.com</p>
   </footer>
 
 </body>
